@@ -14,16 +14,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import ar.edu.unju.fi.app.model.Usuario;
-import ar.edu.unju.fi.app.security.Jwt;
 import ar.edu.unju.fi.app.service.UsuarioService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 @RestController("/auth/")
 public class AuthController {
-	
-	@Autowired
-	Jwt jwt;
 	
 	@Autowired
 	UsuarioService usuarioService;
